@@ -1,0 +1,21 @@
+<html lang="en">
+  <head>
+    <link href="{{ url_for('static',filename='css/bootstrap.min.css') }}"
+          rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted">Upload A Data File</h3>
+      </div>
+      <hr/>
+      <div>
+
+      <form action="upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file"><br /><br />
+        <input type="submit" value="Upload">
+      </form>
+      </div>
+    </div>
+  </body>
+</html>
